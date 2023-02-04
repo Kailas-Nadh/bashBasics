@@ -1,6 +1,6 @@
 #! /bin/bash
-curl ifconfig.me >> /home/kailas/ifconfig_me.txt
-echo >> /home/kailas/ifconfig_me.txt
-date >> /home/kailas/ifconfig_me.txt
-echo >> /home/kailas/ifconfig_me.txt
-echo >> /home/kailas/ifconfig_me.txt
+curl ifconfig.me >> /desired/location/file.txt
+echo >> /desired/location/file.txt
+date >> /desired/location/file.txt
+echo >> /desired/location/file.txt
+echo >> /desired/location/file.txt
