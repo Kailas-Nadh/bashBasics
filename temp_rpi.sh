@@ -1,4 +1,5 @@
 #! /bin/bash
+#Program to monitor rpi temperature
 red='\033[0;31m'
 white='\033[0;37m'
 yellow='\033[0;33m'
