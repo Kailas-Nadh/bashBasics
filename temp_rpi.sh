@@ -6,7 +6,7 @@ yellow='\033[0;33m'
 while true
 do
 	#vcgencmd measure_temp
-	date
+	#date
 	temp=$(vcgencmd measure_temp | egrep -o '[0-9]*\.[0-9]*')
 	sleep 1
 	echo $temp
