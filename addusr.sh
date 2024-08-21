@@ -10,7 +10,7 @@ do
        #adding users '$user' is a variable that changes
        #usernames accordingly in txt file.
        useradd $user
-       echo $password | passwd --stdin $user
+       echo "$username:$password" | chpasswd
 done
 
 #wc -l counts number of lines
