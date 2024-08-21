@@ -6,7 +6,7 @@ sudo apt install -y openssh-server openssh-client ufw
 #Start ssh service and enable it upon startup
 sudo systemctl start ssh.service
 sudo systemctl enable ssh
-sudo systemctl status ssh
+sudo systemctl status ssh --no-pager
 #Allow ssh on default port via firewall
 sudo ufw allow ssh
 sudo ufw enable && sudo ufw reload
