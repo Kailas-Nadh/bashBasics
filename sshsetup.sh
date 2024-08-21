@@ -1,13 +1,17 @@
 #! /bin/bash
-sudo apt install openssh-server 
-sudo apt install openssh-client
-sudo apt install ufw
+#Update the packages and upgrade it to the current version
+sudo apt update && sudo apt upgrade -y
+#Install necessary packages 
+sudo apt install -y openssh-server openssh-client ufw
+#Start ssh service and enable it upon startup
 sudo systemctl start ssh.service
 sudo systemctl enable ssh
 sudo systemctl status ssh
+#Allow ssh on default port via firewall
 sudo ufw allow ssh
 sudo ufw enable && sudo ufw reload
 sudo systemctl restart ssh.service
+#Test ssh in local device
 ssh localhost
 exit
 
