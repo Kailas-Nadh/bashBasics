@@ -1,6 +1,6 @@
 #! /bin/bash
 #Update the packages and upgrade it to the current version
-sudo apt update && sudo apt upgrade -y
+sudo apt update && sudo apt upgrade 
 #Install necessary packages 
 sudo apt install -y openssh-server openssh-client ufw
 #Start ssh service and enable it upon startup
