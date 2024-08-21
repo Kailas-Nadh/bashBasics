@@ -16,4 +16,4 @@ done
 #wc -l counts number of lines
 #tail is to print the lines of a file 
 echo "$(wc -l /tmp/userlist) users have been created" 
-tail -n$(wc -l /tmp userlist) /etc/passwd
+tail -n $(wc -l /tmp userlist) /etc/passwd
