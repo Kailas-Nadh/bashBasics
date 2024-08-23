@@ -10,10 +10,10 @@ do
        #adding users '$user' is a variable that changes
        #usernames accordingly in txt file.
        useradd $user
-       echo $password | passwd --stdin $user
+       echo "$username:$password" | chpasswd
 done
 
 #wc -l counts number of lines
 #tail is to print the lines of a file 
 echo "$(wc -l /tmp/userlist) users have been created" 
-tail -n$(wc -l /tmp userlist) /etc/passwd
+tail -n $(wc -l /tmp userlist) /etc/passwd
